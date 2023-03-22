@@ -1,17 +1,18 @@
-const getApiData = () => {
-  return fetch('https://hp-api.onrender.com/api/characters/house/gryffindor')
+const getDataApi = () => {
+  return fetch('https://hp-api.onrender.com/api/characters')
     .then((response) => response.json())
     .then((data) => {
-      const cleanData = data.results.map((eachCharacter) => {
+      const cleanData = data.map((eachCharacter) => {
         return {
-          image: eachCharacter.image,
+          image: eachCharacter.image || `https://via.placeholder.com/210x295/ffffff/666666/?text=HarryPotter`,
           name: eachCharacter.name,
           species: eachCharacter.species,
           house: eachCharacter.house,
           gender: eachCharacter.gender,
+          id: eachCharacter.id,
         };
       });
       return cleanData;
     });
 };
-export default getApiData;
+export default getDataApi;
