@@ -1,6 +1,6 @@
 import CharacterCard from "./CharacterCard";
 
-function CharacterList({listData }) {
+function CharacterList({listData}) {
 
     const dataHtml = listData.map((eachCharacter) => {
         return (

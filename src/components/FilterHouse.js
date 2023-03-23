@@ -5,18 +5,18 @@ function FilterHouse ({handleFilterHouse, houseFilter}) {
     return (
         <section className="search">
             <label className="search__house" htmlFor="">Select the house:</label>
-             <select 
-              className="search__option"
-              typer="search"
-              name="house" 
-              id={houseFilter}
-              onChange={handleChange}
-             >
-            <option value="Gryffindor">Gryffindor</option>
-            <option value="Slytherin">Slytherin</option>
-            <option value="Hufflepuff">Hufflepuff</option>
-            <option value="Ravenclaw">Ravenclaw</option>
-          </select>
+            <select 
+               className="search__option"
+               typer="search"
+               name="house" 
+               id={houseFilter}
+               onChange={handleChange}
+            >
+               <option value="Gryffindor">Gryffindor</option>
+               <option value="Slytherin">Slytherin</option>
+               <option value="Hufflepuff">Hufflepuff</option>
+               <option value="Ravenclaw">Ravenclaw</option>
+            </select>
         </section>
     )
 }
