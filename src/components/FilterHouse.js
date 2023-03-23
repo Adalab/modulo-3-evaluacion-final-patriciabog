@@ -3,16 +3,15 @@ function FilterHouse ({handleFilterHouse, houseFilter}) {
         handleFilterHouse(ev.target.value);
     }
     return (
-        <section>
-            <label htmlFor="">Selecciona la casa:</label>
+        <section className="search">
+            <label className="search__house" htmlFor="">Select the house:</label>
              <select 
-              className=""
+              className="search__option"
               typer="search"
               name="house" 
               id={houseFilter}
               onChange={handleChange}
              >
-            <option value="Todos">Todos</option>
             <option value="Gryffindor">Gryffindor</option>
             <option value="Slytherin">Slytherin</option>
             <option value="Hufflepuff">Hufflepuff</option>

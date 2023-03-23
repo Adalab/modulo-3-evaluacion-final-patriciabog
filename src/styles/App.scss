@@ -1,1 +1,216 @@
 /* Aquí van tus estilos */
+@import 'core/variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    background-color: #740001;
+    padding: 10px;
+    width: 100%;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__title {
+      font-family: $font-harry;
+      color: #d3a625;
+      font-size: 3rem;
+    }
+}
+.filter {
+    display: flex;
+    flex-direction: column;
+    
+    &__form {
+       margin-top: 30px;
+       margin-bottom: 30px;
+       padding: 5px;
+    }
+}
+.input {
+    
+    &__text {
+        font-family: $font-harry;
+        font-size: 1.2rem;
+        color: #aaaaaa;
+    }
+    &__search{
+        margin-left: 0.5rem;
+        margin-bottom: 1rem;
+        padding: 0.2rem;
+        width: 8rem;
+        color: #b5b4b4;
+        border: 2px solid #5d5d5d;
+        border-radius: 0.2rem;
+        background-color: #740001;
+        font-size: 0.7rem;
+        transition: all ease 0.3s;
+    }   
+}
+.search {
+    &__house {
+        font-family: $font-harry;
+        font-size: 1.2rem;
+        color: #aaaaaa;
+    }
+    &__option {
+        margin-left: 0.5rem;
+        margin-bottom: 1rem;
+        padding: 0.2rem;
+        width: 8rem;
+        color: #aaaaaa;
+        border: 2px solid #5d5d5d;
+        border-radius: 0.2rem;
+        background-color: #740001;
+        font-size: 0.7rem;
+        transition: all ease 0.3s;
+    }
+}
+
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &__box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+}
+
+.card {
+    text-align: center;
+    border: 2px solid #0e1a40;
+    background-color: #d3a625;
+   
+    
+    &__image {
+      
+       
+    }
+    &__name {
+        font-size: 0.8rem;
+        font-family: $font-harry;
+        font-weight: bold;
+        color: #0e1a40;
+    }
+    &__species {
+        color: #0e1a40;
+        font-size: 0.6rem;
+        font-family: $font-family;
+
+    }
+    &__house {
+        color: #0e1a40;
+        font-size: 0.7rem;
+        font-family: $font-family;
+    }
+        
+   
+}
+
+.card-selected {
+    padding: 10px;
+    margin: 10px;
+    background-color: #726255;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    
+    &__image {
+       width: 40vw;
+       height: 40vh;
+       border-radius: 20px;
+       
+    }
+}
+@media all and (min-width: 768px) {
+    .card-selected {
+        width: 70%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-left: 7rem;
+    }
+}
+.selected {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    @media all and (min-width: 768px) {
+            .selected {
+                margin: 50px;
+        
+            }
+        }
+     @media all and (min-width: 1600px) {
+        .selected {
+             margin: 30rem;
+           
+          
+         }
+     }
+    
+    &__name {
+            font-size: 1rem;
+            font-family: $font-harry;
+            font-weight: bold;
+            color: white;
+            padding: 10px;
+        }
+    
+        &__species {
+            color: white;
+            font-size: 0.6rem;
+            font-family: $font-family;
+            padding: 5px;
+        }
+    
+        &__house {
+            color: white;
+            font-size: 0.6rem;
+            font-family: $font-family;
+            padding: 5px;
+        }
+        &__ancestry {
+            color: white;
+            font-size: 0.6rem;
+            font-family: $font-family;
+            padding: 5px;
+        }
+        &__actor {
+            color: white;
+            font-size: 0.6rem;
+            font-family: $font-family;
+            padding: 5px;
+        }
+        &__alive {
+            color: white;
+            font-size: 0.6rem;
+            font-family: $font-family;
+            padding: 5px;
+        }
+}    
+
+.link {
+    color: white;
+    width: 30px;
+    height: 20px;
+    margin-top: -50px;
+    text-decoration: none;
+ 
+
+}
+@media all and (min-width: 768px) {
+    .link {
+       margin-bottom: 320px;
+    }
+}
+

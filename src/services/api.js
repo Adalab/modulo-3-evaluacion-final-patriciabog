@@ -9,6 +9,9 @@ const getDataApi = () => {
           species: eachCharacter.species,
           house: eachCharacter.house,
           gender: eachCharacter.gender,
+          ancestry: eachCharacter.ancestry,
+          actor: eachCharacter.actor,
+          alive: eachCharacter.alive,
           id: eachCharacter.id,
         };
       });

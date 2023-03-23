@@ -1,12 +1,15 @@
 import CharacterCard from "./CharacterCard";
 
-function CharacterList({listData}) {
+function CharacterList({listData }) {
+
     const dataHtml = listData.map((eachCharacter) => {
-        return <CharacterCard eachCharacter={eachCharacter} key={eachCharacter.id}/>;
+        return (
+        <CharacterCard eachCharacter={eachCharacter} key={eachCharacter.id}/>
+        );
     });
     return (
-       <section>
-        <ul>{dataHtml}</ul>
+       <section className="list">
+        <ul className="list__box">{dataHtml}</ul>
        </section>
     );
 }

@@ -2,14 +2,18 @@ import FilterCharacter from "./FilterCharacter";
 import FilterHouse from "./FilterHouse";
 
 
-function Filters({handleFilterHouse, handleFilterCharacter}) {
-    
+function Filters({handleFilterHouse, handleFilterCharacter, characterFilter, houseFilter}) {
+   
   return (
     <section className="filter">
-         <form>
+         <form className="filter__form" >
            <FilterCharacter 
-           handleFilterCharacter={handleFilterCharacter} />
-           <FilterHouse handleFilterHouse={handleFilterHouse}/>
+           handleFilterCharacter={handleFilterCharacter}
+           characterFilter={characterFilter} />
+           <FilterHouse 
+           handleFilterHouse={handleFilterHouse}
+          houseFilter={houseFilter}
+           />
          </form>
     
     </section>
