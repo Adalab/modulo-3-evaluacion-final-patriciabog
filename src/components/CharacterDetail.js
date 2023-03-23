@@ -21,7 +21,7 @@ function CharacterDetail ({characterFind}) {
         <p className="selected__house">{`House: ${characterFind.house}`}</p>
         <p className="selected__ancestry">{`Ancestry: ${characterFind.ancestry}`}</p>
         <p className="selected__actor">{`Actor: ${characterFind.actor}`}</p>
-        <p className="selected__alive">{`Alive: ${characterFind.alive === true ? '❤️' : '☠️'}`}</p>
+        <p className="selected__alive">{`Alive: ${characterFind.alive === true ? 'Yes ❤️' : 'No ☠️'}`}</p>
       </section>
 
       <Link className="link"  to="/"> 👈🏻Back</Link>
